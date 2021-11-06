@@ -1,0 +1,216 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+    background: var(--preto);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header .container-nav {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgba(43, 42, 42, 0.63);
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Roboto';
+    font-size: 27px;
+    margin-right: 40px;
+    margin-left: 39px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(211, 206, 206);
+    margin-right: 11px;
+    font-family: 'Roboto';
+}
+
+header nav a:hover{
+    color: white;
+}
+
+/* Filme Principal */
+.filme-principal {
+    font-size: 16px;
+    background: url("/img/capa-vf7.jpg") center center/cover ;
+    background-color: rgba(0,0,0,0.50);
+    background-blend-mode: color;
+
+    position: absolute;
+    height: 66vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .description {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 45px;
+}
+
+.botao {
+    background-color: rgba(109,109,110,0.8);
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+    padding: 13.6px 40px;
+    margin-right: 8px;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.botao:hover {
+    background-color: rgba(109,109,110,0.4);
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.botao-p {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    color: black;
+
+    padding: 13.6px 30px;
+    margin-right: 8px;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 0.1s ease all;
+}
+
+.botao-p:hover {
+    background-color: rgb(196, 191, 191);
+}
+
+.botao-p a {
+    text-decoration: none;
+    color: black;
+}
+
+.botao-p i {
+    margin-right: 10px;
+}
+
+.container {
+    margin-left: 50PX;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 566px;
+    margin-left: 50px;
+}
+
+.carrosel-filmes h2 {
+    padding-top: 70px;
+    padding-bottom: 14px;
+    font-size: 20px;
+}
+
+.carrosel {
+    margin-right: 3px;
+}
+
+.carrosel h2{
+    padding-top: 30px;
+    padding-bottom: 14px;
+    font-size: 20px;
+}
+
+.owl-theme .item {
+    border: transparent;
+    border-radius: 8px;
+}
+
+.owl-theme .item:hover  {
+    cursor: pointer;
+    border: 3px solid rgba(229, 9, 20, 0.7);
+    border-radius: 5px;
+    box-shadow: #fff;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+footer .footer {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+}
+
+footer .footer h2{
+    color: var(--vermelho);
+}
+
+footer a {
+    text-decoration: none;
+    color: #AAA;
+}
+
+footer .baixo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #AAA;
+    font-size: 0.96rem;
+    padding-top: 10px;
+}
+
+footer .baixo .info-items {
+    display: flex;
+    list-style: none;
+}
+
+footer .baixo .info-items .info-item {
+    margin: 0 10px;
+}
+
+footer .baixo .info-items .info-item:hover {
+    color: #fff;
+    cursor: pointer;
+}
